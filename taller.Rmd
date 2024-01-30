@@ -1,0 +1,97 @@
+---
+title: "Taller pep-python"
+author: "Maria Camila Mejia Arango"
+date: "2024-01-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE
+                      )
+```
+
+
+
+Objetivo: Aprender a utilizar de manera efectiva las mejoras prácticas de codificación en Python, centrándose en la optimización del rendimiento, la legibilidad del codigo y la adhesión a los estándares de estilo, como el pep 8. Adquirir habilidades para escribir código eficiente y mantenible en Python.	
+
+#PUNTO1
+1.	Arregla las sangrías de los siguientes códigos, recuerda que si tienes dudas puedes ir al texto guía
+
+```{python}
+
+def ejemplo(var1,var2,var3):
+print(var2)
+fun = ejemplo(1,2,3)
+```
+
+
+```{python}
+def foo(
+var_1,var_2,
+var_3,var_4):
+print(var_3)
+fun2 = foo(3,4,7,9)
+
+```
+
+
+```{python}
+def suma(a,b):
+resultado = a + b
+return resultado
+n1=4
+n2=11
+rta_suma=suma(n1, n2)
+print(rta_suma)
+```
+
+2.	Importar las siguientes librerías:
+ -math
+-numpy
+-matplolib
+-pandas
+-seaborn  
+
+
+#PUNTO3
+3.	Quitar los espacios en blanco que tienen las siguientes expresiones
+```{python}
+spam (1)
+dct ['key'] = lst [index]
+bar = (0, )
+if x == 4 : print(x , y) ; x , y = y , x
+x     =2
+y     =7
+z     =19
+```
+
+
+4.	Luego, de importar la librería math, realiza una formula utilizando las diferentes funciones que tiene la librería (log,sqrt,exp,fabs…) y poniendo adecuadamente los operadores binarios.
+
+5.	 Organizar la siguiente función de tal forma que cumpla con las recomendaciones que da la guía de Python
+
+```{python}
+from math import sqrt
+def ecua(a,b,c,d):
+  rta = (a + (b*c) -sqrt(d) + 100)
+  return rta
+a = 5
+b= 7
+c=9
+d=4
+resultado = ecua(a, b, c, d)
+print(resultado)
+```
+
+
+
+```{python}
+import sqlite3
+conn = sqlite3.connect('datos.db')
+
+```
+
+
+
+
